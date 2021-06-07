@@ -1,3 +1,5 @@
+set(OpenGL_GL_PREFERENCE GLVND)
+cmake_policy(SET CMP0012 NEW)
 FIND_PACKAGE(OpenGL)
 
 find_package(PkgConfig REQUIRED)
