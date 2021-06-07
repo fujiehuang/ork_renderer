@@ -37,11 +37,11 @@
 #include <opencv2/calib3d/calib3d.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
-#if CV_MAJOR_VERSION == 3
+//#if CV_MAJOR_VERSION == 3
 #include <opencv2/rgbd/linemod.hpp>
-#else
-#include <opencv2/objdetect/objdetect.hpp>
-#endif
+//#else
+//#include <opencv2/objdetect/objdetect.hpp>
+//#endif
 
 #include <object_recognition_renderer/utils.h>
 #include <object_recognition_renderer/renderer2d.h>
