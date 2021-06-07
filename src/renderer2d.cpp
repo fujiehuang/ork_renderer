@@ -44,7 +44,7 @@
 Renderer2d::Renderer2d(const std::string & file_path, float physical_width) :
     mesh_path_(file_path), width_(640), height_(480), focal_length_x_(0), focal_length_y_(0), physical_width_(
         physical_width) {
-  cv::Mat img_ori = cv::imread(file_path, CV_LOAD_IMAGE_UNCHANGED);
+  cv::Mat img_ori = cv::imread(file_path, cv::IMREAD_UNCHANGED);
   if (img_ori.channels() == 4) {
     // Get the alpha channel as the mask
     std::vector<cv::Mat> channels;
